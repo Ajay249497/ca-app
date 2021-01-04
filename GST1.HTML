@@ -7,13 +7,26 @@
 <body>
 <h3>GSTR Summary Invoice Wise</h3>
 <input type="file" id="file" onchange="runCmd(this)">
+<p id="GSTIN"></p>
 <p id="fp"></p>
-<table>
+<ul>
+<li><a href="#b2bI">B2B Invoices</a></li>
+<li><a href="#b2baI">B2BA Invoices</a></li>
+</ul>
+<table id="b2bI">
 <caption>B 2 B Invoices</caption>
 <thead>
-<tr><th>GSTIN</th><th>Date</th><th>Inv No.</th><th>POS</th><th>Taxable Value</th><th>Rate</th><th>IGST</th><th>CGST</th><th>SGST</th></tr>
+<tr><th>GSTIN</th><th>Date</th><th>Inv No.</th><th>POS</th><th>RCM</th><th>Taxable Value</th><th>Rate</th><th>IGST</th><th>CGST</th><th>SGST</th></tr>
 </thead>
 <tbody id="b2bdata">
+</tbody>
+</table>
+<table id="b2baI">
+<caption>B 2 B A Invoices</caption>
+<thead>
+<tr><th>GSTIN</th><th>Original Date</th><th>Date</th><th>Inv No.</th><th>POS</th><th>RCM</th><th>Taxable Value</th><th>Rate</th><th>IGST</th><th>CGST</th><th>SGST</th></tr>
+</thead>
+<tbody id="b2badata">
 </tbody>
 </table>
 </body>
