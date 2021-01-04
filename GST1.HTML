@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<script src="gst1.js"></script>
+<link href="gst1.css" rel="stylesheet">
+</head>
+<body>
+<h3>GSTR Summary Invoice Wise</h3>
+<input type="file" id="file" onchange="runCmd(this)">
+<p id="fp"></p>
+<table>
+<caption>B 2 B Invoices</caption>
+<thead>
+<tr><th>GSTIN</th><th>Date</th><th>Inv No.</th><th>POS</th><th>Taxable Value</th><th>Rate</th><th>IGST</th><th>CGST</th><th>SGST</th></tr>
+</thead>
+<tbody id="b2bdata">
+</tbody>
+</table>
+</body>
+</html>
